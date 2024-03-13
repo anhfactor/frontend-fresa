@@ -1,0 +1,151 @@
+.global-settings {
+  padding: 80px !important;
+  background-image: url('../../../assets/images/img-17.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .ant-descriptions-item-content,
+  .ant-card-head-title {
+    color: var(--bg-color);
+  }
+
+  .settings-card {
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border: none;
+
+    .ant-steps-item-active {
+      .ant-steps-item-container {
+        .ant-steps-item-content {
+          .ant-steps-item-title {
+            color: var(--bg-color);
+          }
+        }
+      }
+    }
+
+    .ant-steps-item-finish {
+      .ant-steps-item-container {
+        .ant-steps-item-icon {
+          background: transparent;
+
+          .ant-steps-icon {}
+        }
+
+        .ant-steps-item-content {
+          .ant-steps-item-title {
+            color: var(--bg-color);
+          }
+        }
+      }
+    }
+
+    .ant-steps-item-wait {
+      .ant-steps-item-container {
+        .ant-steps-item-icon {
+          background: transparent;
+
+          .ant-steps-icon {}
+        }
+
+        .ant-steps-item-content {
+          .ant-steps-item-title {
+            color: var(--bg-color);
+          }
+        }
+      }
+
+      .ant-steps-item-container {
+        .ant-steps-item-content {
+          .ant-steps-item-title {
+            color: var(--bg-color);
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-card-bordered {
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border: none;
+
+    .ant-input[type='text'],
+    .ant-input[type='password'] {
+      -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.28) inset !important;
+      -webkit-text-fill-color: var(--dark) !important;
+      background-clip: content-box !important;
+      color: var(--dark) !important;
+      caret-color: var(--dark) !important;
+    }
+
+    .ant-form-item-control-input-content {
+
+      .ant-input,
+      .ant-input-status-success,
+      .ant-input-status-error {
+        background: none !important;
+      }
+    }
+
+    .ant-form-item-control-input-content .ant-input-password,
+    .ant-input-affix-wrapper {
+      background: rgba(255, 255, 255, 0.28) !important;
+      backdrop-filter: blur(15px);
+
+      .ant-input[type='text'],
+      .ant-input[type='password'] {
+        -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+        -webkit-text-fill-color: var(--dark) !important;
+        background-clip: content-box !important;
+        color: var(--dark) !important;
+        caret-color: var(--dark) !important;
+      }
+    }
+
+    .ant-card-extra {
+      p {
+        color: var(--bg-color);
+      }
+    }
+
+    .ant-form-item-label {
+      .ant-form-item-required {
+        color: var(--bg-color);
+      }
+    }
+
+    .ant-upload {
+      .anticon-plus {
+        color: var(--bg-color);
+      }
+
+      color: var(--bg-color);
+    }
+  }
+
+
+  .global-settings-container {
+    .steps-content {
+      height: 80vh;
+      background: white;
+      overflow-x: auto;
+      border-radius: 7px;
+      box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+      padding: 24px;
+
+      .steps-action {
+        display: flex;
+        align-items: flex-end;
+        padding: 0 24px;
+      }
+    }
+  }
+}

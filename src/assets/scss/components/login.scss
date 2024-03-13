@@ -1,0 +1,122 @@
+.login-container {
+  height: 100vh;
+  background-image: url('../../images/img-17.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .card {
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border: none;
+    .ant-form-item-required {
+      color: var(--bg-color);
+    }
+    .ant-input-affix-wrapper {
+      background: rgba(255, 255, 255, 0.28);
+      border: none;
+    }
+    .ant-input-prefix {
+      .anticon {
+        svg {
+          fill: black;
+          color: black;
+        }
+      }
+    }
+    .ant-input[type='text'],
+    .ant-input[type='password'] {
+      -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.28) inset !important;
+      -webkit-text-fill-color: var(--dark) !important;
+      background-clip: content-box !important;
+      color: var(--dark) !important;
+      caret-color: var(--dark) !important;
+    }
+
+    .ant-form-item-control-input-content {
+      .ant-input,
+      .ant-input-status-success,
+      .ant-input-status-error {
+        background: none !important;
+      }
+    }
+    .ant-form-item-control-input-content .ant-input-password,
+    .ant-input-affix-wrapper {
+      background: rgba(255, 255, 255, 0.28) !important;
+      backdrop-filter: blur(15px);
+      .ant-input[type='text'],
+      .ant-input[type='password'] {
+        -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+        -webkit-text-fill-color: var(--dark) !important;
+        background-clip: content-box !important;
+        color: var(--dark) !important;
+        caret-color: var(--dark) !important;
+      }
+    }
+
+    .ant-form-item-explain-error {
+      color: var(--danger);
+      letter-spacing: 1px;
+    }
+    .ant-descriptions-item-content {
+      span {
+        color: var(--bg-color);
+      }
+    }
+  }
+  .app-brand {
+    background: transparent;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+    .brand-logo {
+      color: var(--bg-color);
+      font-weight: 600;
+      font-size: 42px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .login-form-button {
+    width: 100%;
+  }
+  .copy-link {
+    display: block;
+    width: 100%;
+    color: var(--bg-color);
+  }
+}
+
+[data-theme='dark'] .login-container {
+  .card {
+    .ant-input-prefix {
+      .anticon {
+        svg {
+          fill: white;
+          color: white;
+        }
+      }
+    }
+    .ant-input-affix-wrapper {
+      background: var(--bg-color) !important;
+      border: none;
+    }
+    .ant-input-password,
+    .ant-input-affix-wrapper {
+      .ant-input[type='text'],
+      .ant-input[type='password'] {
+        -webkit-box-shadow: 0 0 0 1000px var(--bg-color) inset !important;
+        -webkit-text-fill-color: var(--white) !important;
+        background-clip: content-box !important;
+        color: var(--white) !important;
+        caret-color: white !important;
+        margin-left: 5px;
+      }
+    }
+  }
+}
